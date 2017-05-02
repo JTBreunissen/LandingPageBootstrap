@@ -12,5 +12,6 @@ html, body {
 #intro p {
   color: white;
   text-align: center;
-  
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 1.8em;
 }

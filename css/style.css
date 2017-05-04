@@ -1,8 +1,15 @@
-html, body {
+#wrapper-intro {
+    background:url('../img/bg.jpg') center center no-repeat;
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 20px;
+  }
+
+/*#background-intro {
   background:url('../img/bg.jpg') center center no-repeat;
   height: 100%;
   background-size: cover;
-}
+}*/
 
 @media(max-width:768px) {
   #logo img {
@@ -43,12 +50,26 @@ html, body {
   font-weight: bold;
 }
 
+#wrapper-carousel {
+  margin: auto;
+}
+
+.carousel {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel img {
+  width: 100%;
+  margin: auto;
+}
+
 #icons {
   text-align: center;
 }
 
 #icons .fa {
-  color: white;
+  color: grey;
   margin: 5px 15px;
   position:relative;
   bottom:0;

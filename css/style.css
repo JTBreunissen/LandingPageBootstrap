@@ -31,6 +31,10 @@ html, body {
   padding-top: 20px;
 }
 
+#intro .row {
+  background-color: rgba(106, 115, 124, 0.8);
+}
+
 #intro p {
   color: white;
   text-align: center;

@@ -1,5 +1,5 @@
 body {
-  background-color: #ECD078;
+  background-color: #E5E5E5;
 }
 
 .border {
@@ -13,6 +13,26 @@ body {
     padding-bottom: 20px;
     box-shadow: 2px 2px 10px black;
   }
+
+@media(min-width:768px) {
+  .border{
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+@media(min-width:1080px) {
+  .border{
+    max-width: 70%;
+    margin: auto;
+  }
+}
+@media(min-width:1440px) {
+  .border{
+    max-width: 60%;
+    margin: auto;
+  }
+}
 
 @media(max-width:768px) {
   #logo img {
@@ -31,8 +51,10 @@ body {
   .cardboard-title {
     font-family: 'Press Start 2P', cursive;
     font-size: 1.8em;
-    color: rgba(236, 208, 120, 0.5);
-    text-shadow: 1px 4px 0px #ecd078, 0px 0px 0px #000, 1px 4px 0px #ecd078
+  }
+
+  #me {
+    border-width: 5px !important;
   }
 }
 
@@ -49,7 +71,7 @@ body {
 }
 
 #intro .row {
-  background-color: rgba(217, 91, 67, 0.8);
+  background-color: rgba(252,163,17, 0.8);
 }
 
 #intro p {
@@ -60,19 +82,29 @@ body {
   font-weight: bold;
 }
 
-/*#wrapper-carousel {
-  margin: auto;
+#title-me .about-picture {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
-.carousel {
-  width: 80%;
-  margin: 0 auto;
+#title-me .text-about {
+  color: white;
 }
 
-.carousel img {
-  width: 100%;
-  margin: auto;
-}*/
+#title-me img {
+  max-width: 50%;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #E5E5E5;
+  display: inline-block;
+}
+
+#title-me .about-text-col {
+  text-align: center;
+
+}
 
 #icons {
   text-align: center;
@@ -103,17 +135,17 @@ body {
 }
 
 #title-me {
-  background-color: rgba(83,119,122, .6);
+  background-color: rgba(20,33,61, .8);
   box-shadow: 2px 2px 10px black;
 }
 
 .title {
   text-align: center;
-  transition:all 0.8s ease-in-out;
+  transition:all 0.5s ease-in-out;
 }
 
 .title:hover {
-  color: #ECD078;
+  color: #E5E5E5;
 }
 
 p {
@@ -126,10 +158,12 @@ p {
 }
 
 #me {
-  background:url('../img/cardboard-texture.jpg') center center;
+  background:url('../img/white.jpg') center center;
   box-shadow: 2px 2px 10px black;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-style: solid;
+  border-width: 10px;
 }
 
 #me .card {
@@ -137,50 +171,38 @@ p {
   margin-bottom: 5px;
   margin-left: -8px;
   margin-right: -8px;
-  background-color: #D95B43;
-  box-shadow: 2px 2px 10px black;
+  background-color: #FCA311;
+  /*box-shadow: 2px 2px 10px black;*/
 }
 
 #me .card-middle {
   margin-top: 5px;
   margin-bottom: 5px;
-  background-color: #D95B43;
+  background-color: #FCA311;
   box-shadow: 2px 2px 10px black;
 }
 
 #me .card:hover {
-  background-color: #c43115;
+  background-color: #14213D;
   box-shadow: 2px 2px 10px black;
   color: white;
 }
 
+#me .card:hover .title {
+  color: #E5E5E5;
+}
+
 .cardboard-title {
-  font-family: 'Press Start 2P', cursive;
-  color: rgba(236, 208, 120, 0.5);
-  text-shadow: 1px 4px 0px #ecd078, 0px 0px 0px #000, 1px 4px 0px #ecd078
+  font-family: 'Amatic SC', cursive;
+  color: #14213D;
+  font-size: 3em;
+
 }
 
 .purple {
-  color: #3d1d2a;
+  color: #14213D;
 }
 
 .yellow {
-  color: #ECD078;
-}
-
-/* Grow */
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  color: #E5E5E5;
 }

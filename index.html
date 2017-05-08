@@ -14,15 +14,17 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
 </head>
 <body>
+  <button onclick="topFunction()" id="toTop" title="Go to top">Top</button>
+
   <div class="border">
       <section id="intro">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
               <img src="./img/my-logo.png">
-            </div>
+            </div> -->
 
-            <div class="col-md-6 text-intro-terminal">
+            <div class="col-md-12 text-intro-terminal">
               <div class="intro-text">
                 <p> > Hi, I'm JT.</p>
                 <p class="typewrite"> > A jr. web developer available for hire!</p>
@@ -171,5 +173,22 @@
           });
       });
     </script>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("toTop").style.display = "block";
+        } else {
+            document.getElementById("toTop").style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+  </script>
+
   </body>
 </html>

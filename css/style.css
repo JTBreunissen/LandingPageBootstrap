@@ -62,7 +62,7 @@ body {
     }
 }
 
-#intro .text-intro-terminal {
+#intro  {
   margin-top: 25px;
   background-color: rgba(0, 0, 0, 0.6);
   box-shadow: 2px 2px 10px black;
@@ -88,6 +88,10 @@ body {
 #title-me {
   background-color: rgba(20,33,61, .8);
   box-shadow: 2px 2px 10px black;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #E5E5E5;
+
 }
 
 #title-me .about-picture {
@@ -101,10 +105,10 @@ body {
 }
 
 #title-me img {
-  max-width: 50%;
+  max-width: 70%;
   border-radius: 50%;
   border-style: solid;
-  border-width: 10px;
+  border-width: 5px;
   border-color: #E5E5E5;
   display: inline-block;
 }
@@ -117,6 +121,13 @@ body {
 #icons {
   text-align: center;
   margin-top: 15px;
+  background-color: rgba(20,33,61, .8);
+  border-top: solid;
+  border-left: solid;
+  border-right: solid;
+  border-width: 10px;
+  border-color: #E5E5E5;
+  display: inline-block;
 }
 
 #icons .fa {
@@ -125,6 +136,10 @@ body {
   position:relative;
   bottom:0;
   transition:all 0.2s ease-in-out;
+}
+
+#icons .list-inline {
+  margin-top: 10px;
 }
 
 #icons .twitter:hover {
@@ -253,4 +268,28 @@ body {
 
 .title-color {
   color: white;
+}
+
+#toTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #FCA311;
+    color: #292b2c;
+    cursor: pointer;
+    padding: 5px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    border-color: white;
+    font-weight: bold;
+}
+
+#toTop:hover {
+    background-color: #14213D;
+    color: white;
 }

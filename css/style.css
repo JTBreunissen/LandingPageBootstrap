@@ -32,7 +32,7 @@ body {
 }
 
 @media(max-width:768px) {
-  #intor img {
+  #intro img {
     width:50% !important;
   }
 
@@ -45,8 +45,8 @@ body {
     font-size:2.5em;
   }
 
-  .cardboard-title {
-    font-family: 'Press Start 2P', cursive;
+  .whiteboard-title {
+    font-family: 'Amatic SC', cursive;
     font-size: 1.8em;
   }
 
@@ -69,7 +69,7 @@ body {
   padding-top: 10px;
   border-style: solid;
   border-width: 10px;
-  border-color: grey;
+  border-color: #E5E5E5;
 }
 
 #intro img {
@@ -79,10 +79,8 @@ body {
 
 #intro p {
   color: white;
-  /*text-align: center;*/
   font-family: 'Ubuntu', sans-serif;
   font-size: 2em;
-  /*font-weight: bold;*/
 }
 
 #title-me {
@@ -91,12 +89,10 @@ body {
   border-style: solid;
   border-width: 10px;
   border-color: #E5E5E5;
-
 }
 
 #title-me .about-picture {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 25px;
   text-align: center;
 }
 
@@ -105,7 +101,8 @@ body {
 }
 
 #title-me img {
-  max-width: 70%;
+  max-width: 60%;
+  /*min-width: 40%;*/
   border-radius: 50%;
   border-style: solid;
   border-width: 5px;
@@ -113,8 +110,10 @@ body {
   display: inline-block;
 }
 
-#title-me .about-text-col {
+#title-me .title-about {
   text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
 
 }
 
@@ -127,7 +126,6 @@ body {
   border-right: solid;
   border-width: 10px;
   border-color: #E5E5E5;
-  display: inline-block;
 }
 
 #icons .fa {
